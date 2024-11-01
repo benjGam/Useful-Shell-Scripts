@@ -1,8 +1,8 @@
 # /bin/sh
-read -p "Commit message prefix: " preffix
+read -e -p "Commit message prefix: " preffix
 while true
 do
-  read -p "Message: " msg
+  read -e -p "Message: " msg
   if [ "$msg" == "exit" ]
   then
     exit 0
